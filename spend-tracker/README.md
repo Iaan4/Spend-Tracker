@@ -98,5 +98,5 @@ Without a volume, SQLite data is wiped on every redeploy on most free tiers.
 ## Additionally
 - **Timezones**: "today" and month boundaries use the server date; I'd store the user's timezone.
 - **Currency** column and a fixed category list (or a categories table) instead of free text; keyset pagination instead of OFFSET.
-- Rate limiting, structured logging, CI (pytest + ruff), browser-level UI tests.
+- Rate limiting, structured logging, pytest, browser-level UI tests.
 - Make the insight threshold configurable and compare against a rolling average so one unusual month doesn't dominate.
