@@ -3,6 +3,9 @@
 A small expense-logging service: a Python REST API (FastAPI + SQLite) and a
 one-page UI to add expenses and view a monthly summary.
 
+<img width="1327" height="925" alt="tracker" src="https://github.com/user-attachments/assets/7a9ba233-f51f-4ba9-bc38-52e0d3398333" />
+
+
 ## Run it
 
 ```bash
