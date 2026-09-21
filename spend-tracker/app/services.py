@@ -8,7 +8,7 @@ import sqlite3
 from . import db
 
 # A category is flagged when its spend rises by MORE than this vs last month.
-INSIGHT_THRESHOLD_PCT = 20
+INSIGHT_THRESHOLD_PCT = 25
 
 _MONTH_RE = re.compile(r"^\d{4}-(0[1-9]|1[0-2])$")
 
