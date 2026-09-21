@@ -1,1 +1,1 @@
-##open spend -tracker branch which is the sub-brancb to view the project
+open spend-tracker branch which is the sub-branch to view the project
