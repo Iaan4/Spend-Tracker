@@ -9,7 +9,7 @@ one-page UI to add expenses and view a monthly summary.
 ## Run it
 
 ```bash
-python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
+python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate.ps1
 pip install -r requirements-dev.txt
 
 uvicorn app.main:create_app --factory --reload          # http://localhost:8000
@@ -100,4 +100,4 @@ Without a volume, SQLite data is wiped on every redeploy on most free tiers.
 - **Currency** column and a fixed category list (or a categories table) instead of free text; keyset pagination instead of OFFSET.
 - Rate limiting, structured logging, pytest, browser-level UI tests.
 - Make the insight threshold configurable and compare against a rolling average so one unusual month doesn't dominate.
--Enabling rename option
+- Edit/rename support (PATCH /expenses/{id})
