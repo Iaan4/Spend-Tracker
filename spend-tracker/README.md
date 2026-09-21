@@ -95,8 +95,9 @@ repo, set `API_KEY` to a long random string, and **attach a persistent
 disk/volume mounted at `/data`** (the image sets `SPEND_DB=/data/spend.db`).
 Without a volume, SQLite data is wiped on every redeploy on most free tiers.
 
-## Additionally
+## What I would do later
 - **Timezones**: "today" and month boundaries use the server date; I'd store the user's timezone.
 - **Currency** column and a fixed category list (or a categories table) instead of free text; keyset pagination instead of OFFSET.
 - Rate limiting, structured logging, pytest, browser-level UI tests.
 - Make the insight threshold configurable and compare against a rolling average so one unusual month doesn't dominate.
+-Enabling rename option
