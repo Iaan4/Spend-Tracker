@@ -9,7 +9,7 @@ one-page UI to add expenses and view a monthly summary.
 ## Run it
 
 ```bash
-python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate.ps1
+python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\Activate.ps1
 pip install -r requirements-dev.txt
 
 uvicorn app.main:create_app --factory --reload          # http://localhost:8000
@@ -53,7 +53,7 @@ Configuration is via environment variables:
 ```
 
 Errors: `401` bad/missing key, `422` validation failure (the body lists each bad
-field), `404` unknown route.
+field), `404` or expense id".
 
 ## Key design decisions
 
