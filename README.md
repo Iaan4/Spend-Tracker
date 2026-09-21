@@ -85,7 +85,7 @@ field), `404` unknown route.
 - **UI** is a single static HTML file (no build step). It writes user text with
   `textContent`, so a note like `<script>` can't inject markup.
 
-## Deploying (bonus)
+## Deploying
 
 A `Dockerfile` is included. On Render/Railway/Fly: create a web service from the
 repo, set `API_KEY` to a long random string, and **attach a persistent
